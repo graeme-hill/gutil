@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'pangloss/vim-javascript'
 Bundle 'maksimr/vim-jsbeautify'
+Bundle 'vim-scripts/Smooth-Scroll'
 
 filetype plugin on
 filetype plugin indent on
