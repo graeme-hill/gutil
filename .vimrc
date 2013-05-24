@@ -1,17 +1,17 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
+set nocompatible
+set laststatus=2
+set encoding=utf-8
+filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle
-" required! 
 Bundle 'gmarik/vundle'
-
-" My Bundles here:
 Bundle 'pangloss/vim-javascript'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'vim-scripts/Smooth-Scroll'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
 
 filetype plugin on
 filetype plugin indent on
@@ -23,11 +23,11 @@ set hlsearch
 
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *
-\ if ! exists("g:leave_my_cursor_position_alone") |
-\ if line("'\"") > 0 && line ("'\"") <= line("$") |
-\ exe "normal g'\"" |
-\ endif |
-\ endif
+            \ if ! exists("g:leave_my_cursor_position_alone") |
+            \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+            \ exe "normal g'\"" |
+            \ endif |
+            \ endif
 
 set smartindent
 set tabstop=4
@@ -38,3 +38,5 @@ set expandtab
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
+map <C-n> :NERDTreeToggle<CR>
