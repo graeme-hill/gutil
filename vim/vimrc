@@ -3,15 +3,15 @@ set laststatus=2
 set encoding=utf-8
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" load pathogen which will autoload the plugins in bundle directory
+set runtimepath+=~/gutil/vim
+source ~/gutil/vim/pathogen/autoload/pathogen.vim
+call pathogen#incubate('bundle/{}')
+execute pathogen#infect()
 
-Bundle 'gmarik/vundle'
-Bundle 'pangloss/vim-javascript'
-Bundle 'maksimr/vim-jsbeautify'
-Bundle 'vim-scripts/Smooth-Scroll'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Lokaltog/vim-powerline'
+" change backup directories
+set dir=~/gutil/vim/.vimswap
+set backupdir=~/gutil/vim/.vimbackup
 
 filetype plugin on
 filetype plugin indent on
@@ -23,11 +23,11 @@ set hlsearch
 
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *
-            \ if ! exists("g:leave_my_cursor_position_alone") |
-            \ if line("'\"") > 0 && line ("'\"") <= line("$") |
-            \ exe "normal g'\"" |
-            \ endif |
-            \ endif
+  \ if ! exists("g:leave_my_cursor_position_alone") |
+  \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+  \ exe "normal g'\"" |
+  \ endif |
+  \ endif
 
 set smartindent
 set tabstop=4
