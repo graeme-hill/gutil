@@ -1,3 +1,4 @@
 *~
 vim/.vimswap/*
 vim/.vimbackup/*
+.netrwhist

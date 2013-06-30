@@ -3,6 +3,14 @@ set laststatus=2
 set encoding=utf-8
 filetype off
 
+" make backspace work the normal way
+set backspace=2
+
+" if using gvim then remove toolbar, menubar, and scrollbar
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+
 " load pathogen which will autoload the plugins in bundle directory
 set runtimepath+=~/gutil/vim
 source ~/gutil/vim/pathogen/autoload/pathogen.vim
