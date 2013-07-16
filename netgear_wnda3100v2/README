@@ -1,0 +1,18 @@
+HOW TO GET NETGEAR WNDA3100v2 to work
+
+cd into the ndiswrapper directory and run this:
+
+make
+sudo make install
+
+These commands may require that ndiswrapper-common or some other package
+is installed first, I'm really not sure.
+
+Then use ndiswrapper to load the driver:
+
+sudo ndiswrapper -i gutil/netgear_wnda3100v2/driver/bcmn43xx64.inf
+sudo depmod -a
+sudo modprobe ndiswrapper
+sudo ndiswrapper -m
+
+After this it should work, but don't move the files! You will break it!
