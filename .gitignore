@@ -2,3 +2,16 @@
 vim/.vimswap/*
 vim/.vimbackup/*
 .netrwhist
+*.o
+*.S
+*.s
+*.ko
+.*.cmd
+*.mod.c
+*.symvers
+modules.order
+#*
+.tmp_versions/
+loadndisdriver
+ndiswrapper-1.58.tar.gz
+patch-stamp
