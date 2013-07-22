@@ -25,3 +25,6 @@
 [submodule "vim/bundle/synic.vim"]
 	path = vim/bundle/synic.vim
 	url = git@github.com:vim-scripts/synic.vim
+[submodule "vim/bundle/grep.vim"]
+	path = vim/bundle/grep.vim
+	url = git@github.com:vim-scripts/grep.vim
