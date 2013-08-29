@@ -6,6 +6,9 @@ filetype off
 " make backspace work the normal way
 set backspace=2
 
+" keep cursor in center of screen with big scrolloff
+set scrolloff=999
+
 " if using gvim then remove toolbar, menubar, and scrollbar
 set guioptions-=m
 set guioptions-=T
