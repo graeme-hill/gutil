@@ -45,6 +45,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" change indentation for just ruby
+au FileType ruby setl sw=2 sts=2 et
+
 " beautification shortcuts
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
