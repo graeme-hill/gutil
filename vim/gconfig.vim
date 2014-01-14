@@ -56,3 +56,5 @@ autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 map <C-n> :NERDTreeToggle<CR>
 
 colorscheme desert
+
+set number

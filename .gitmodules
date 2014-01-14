@@ -28,3 +28,6 @@
 [submodule "vim/bundle/grep.vim"]
 	path = vim/bundle/grep.vim
 	url = git@github.com:vim-scripts/grep.vim
+[submodule "vim/bundle/dart-vim-plugin"]
+	path = vim/bundle/dart-vim-plugin
+	url = git@github.com:dart-lang/dart-vim-plugin
