@@ -48,6 +48,10 @@ set expandtab
 " change indentation for just ruby
 au FileType ruby setl sw=2 sts=2 et
 
+" change indentation for just scala
+au FileType scala setl sw=2 sts=2 et
+au FIleType sbt setl sw=2 sts=2 et
+
 " beautification shortcuts
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
