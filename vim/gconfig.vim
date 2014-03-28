@@ -45,12 +45,13 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" change indentation for just ruby
+" change indentation for certain languages
 au FileType ruby setl sw=2 sts=2 et
-
-" change indentation for just scala
 au FileType scala setl sw=2 sts=2 et
 au FIleType sbt setl sw=2 sts=2 et
+au FIleType c setl sw=2 sts=2 et
+au FIleType cpp setl sw=2 sts=2 et
+au FIleType h setl sw=2 sts=2 et
 
 " beautification shortcuts
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
