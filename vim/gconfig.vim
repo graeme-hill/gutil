@@ -3,6 +3,9 @@ set laststatus=2
 set encoding=utf-8
 filetype off
 
+" use incremental search so that it updates results as you type
+set incsearch
+
 " make backspace work the normal way
 set backspace=2
 
