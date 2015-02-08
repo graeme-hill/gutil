@@ -43,3 +43,6 @@
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter
+[submodule "vim/bundle/omnisharp"]
+	path = vim/bundle/omnisharp
+	url = git@github.com:OmniSharp/omnisharp
